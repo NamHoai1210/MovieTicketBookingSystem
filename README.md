@@ -44,7 +44,8 @@ After that, go to the right tab and click Import. Then choose File and import th
 Copy Project Folder: After that, copy the project folder (MovieBookingSystem) to:
     Window: C:\xampp\htdocs\
     Ubuntu: /otp/lampp/htdocs/
-### - Step 6: Execute Project: Finally, go to the localhost/MovieBookingSystem
+### - Step 6: Execute Project: 
+Finally, go to the localhost/MovieBookingSystem
 
 
 
