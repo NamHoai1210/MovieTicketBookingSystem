@@ -1,5 +1,4 @@
 # MovieTicketBookingSystem
-Our Database Lab Project
 Front end: [Thang Luong](https://github.com/thanggggg1)
 
 ## Functions of Movie Ticket Booking System Project in PHP
