@@ -2,6 +2,7 @@
 
 html * {
   font-family: "Roboto Condensed", sans-serif;
+  box-sizing: border-box;
 }
 
 /*
@@ -403,6 +404,56 @@ a:hover {
   margin-bottom: 5%;
 }
 
+.listview_row {
+  display: flex;
+  flex-wrap: row;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 15px;
+  justify-content: flex-end;
+}
+.max-lines {
+  display: block;/* or inline-block */
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  max-height: 3.5em;
+  line-height: 1.8em;
+}
+.div_image {
+  width: 32%;
+  padding: 0 15px;
+}
+
+.div_image img {
+  max-width: 100%;
+}
+
+.left {
+  width: 48%;
+  padding: 0 15px;
+  margin-right: 40px;
+}
+
+.right {
+  width: 48%;
+  padding: 0 15px;
+}
+
+.bg-1a {
+  background-color: #1a1a1a;
+
+}
+
+.div_text {
+  width: 68%;
+  padding: 0 15px;
+}
+
+.div_text p {
+  font-size: 16px;
+}
+
 .extra-wrap {
   overflow: hidden;
 }
@@ -533,6 +584,17 @@ a:hover {
   line-height: 1.5em;
   font-family: verdana, arial, helvetica, helve, sans-serif;
   padding: 0;
+}
+
+.text_one_line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 65px;
 }
 
 /***** Media Quries *****/
@@ -1160,6 +1222,179 @@ h4.h-text a:hover {
   margin-bottom: 15px;
 }
 
+.bg-image-choosen {
+  background-image: url('../images/ic_couch_active.svg');
+}
+
+.bg-image {
+  cursor: pointer;
+}
+
+input:checked {
+  background-color: #d8a354;
+}
+
+.container-seat {
+  display: block;
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-right: 12px;
+}
+
+.background-screen {
+  background-color: #313131;
+  width: 100%;
+}
+
+.screen-img {
+  width: 100%;
+}
+
+.font-img {
+  font-size: 40px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: #ccc;
+}
+
+.font-table {
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: red;
+}
+
+.background-div {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0%;
+  background-image: url('../images/pattern.png');
+  -webkit-transform: skewX(214deg);
+  -moz-transform: skewX(8deg);
+  -ms-transform: skewX(8deg);
+  -o-transform: skewX(8deg);
+  transform: skewX(167deg);
+  opacity: 0.13;
+}
+
+.row-div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 16%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Hide the browser's default checkbox */
+.container-seat input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #444;
+}
+
+/* On mouse-over, add a grey background color */
+.container-seat:hover input~.checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container-seat input:checked~.checkmark {
+  background-color: #d8a354;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container-seat input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container-seat .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 /***** Media Quries *****/
 @media only screen and (max-width: 1024px) {
   .wrap {
@@ -1402,4 +1637,5 @@ h4.h-text a:hover {
     width: 100%;
     margin: 30px auto;
   }
+
 }

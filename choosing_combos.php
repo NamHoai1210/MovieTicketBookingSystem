@@ -31,7 +31,7 @@
                         </div>
                         <div class="movie-text">
                             <h4 class="h-text"><a href="booking.php?combo_id=<?php echo $cb['combo_id']; ?>" style="text-decoration:none;"><?php echo $cb['desc']; ?></a></h4>
-                            Amount: <Span class="color2" style="text-decoration:none;"><?php echo $cb['amount']; ?></span><br>
+                            Amount: <Span class="color2" style="text-decoration:none;"><?php echo $cb['amount'] . ' 000'; ?></span> <u>đ</u> <br>
 
                         </div>
                     </div>

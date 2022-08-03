@@ -171,6 +171,14 @@ include('../../config.php');
                         </a>
                     </li>
                     <li class="treeview">
+                        <a href="view_combos.php">
+                            <i class="fa fa-beer"></i> <span>View Combos</span>
+                            <span class="pull-right-container">
+                                <i class="fa fa-angle-left pull-right"></i>
+                            </span>
+                        </a>
+                    </li>
+                    <li class="treeview">
                         <a href="view_turnover.php">
                             <i class="fa fa-money"></i> <span>View Turnover</span>
                             <span class="pull-right-container">

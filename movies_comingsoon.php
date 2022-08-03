@@ -9,7 +9,7 @@
         </div>
         <?php
         $today = date("Y-m-d");
-        $qry2 = mysqli_query($con, "select * from  tbl_movie where release_date > CURDATE()");
+        $qry2 = mysqli_query($con, "select * from  tbl_movie where release_date > CURDATE() ORDER BY release_date");
 
         while ($m = mysqli_fetch_array($qry2)) {
         ?>
@@ -20,6 +20,7 @@
                     </div>
                     <div class="movie-text">
                         <h4 class="h-text"><a href="about.php?id=<?php echo $m['movie_id']; ?>" style="text-decoration:none;"><?php echo $m['movie_name']; ?></a></h4>
+                        Release date: <Span class="color2" style="text-decoration:none;"><?php echo $m['release_date']; ?></span><br>
                     </div>
                 </div>
             </div>
